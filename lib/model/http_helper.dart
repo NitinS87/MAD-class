@@ -7,7 +7,7 @@ class HttpHelper {
   //https://api.openweathermap.org/data/2.5/weather?q=Gurgaon&appid=e77e558e80f3b53249ddb36c055b14f9
   final String authority = 'api.cricapi.com';
   final String playerPath = 'v1/players';
-  final String apiKey = '727ff4b2-849d-4566-9256-d37bd80973fc';
+  final String apiKey = '';
 
   Future<Player> getPlayerInfo(String location) async {
     Map<String, dynamic> parameter = {
