@@ -23,6 +23,8 @@ class Passwords {
   }
 
   bool valid() {
-    return password.length >= length;
+    var regex = RegExp(
+        r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
+    return !regex.hasMatch(password) && password.length >= length;
   }
 }

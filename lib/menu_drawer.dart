@@ -64,6 +64,9 @@ class MenuDrawer extends StatelessWidget {
             case 'Form':
               screen = const MultiWidgetForm();
               break;
+            case 'Form Result':
+              screen = const MultiWidgetForm();
+              break;
           }
           Navigator.of(ctx).push(MaterialPageRoute(builder: (ctx) => screen));
         },
